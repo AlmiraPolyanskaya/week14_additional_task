@@ -69,7 +69,7 @@ directors.forEach(director => {
 const topFilmsElement = document.getElementById('top-films');
 const topFilms = directors.map(director => director.top_rated_film);
 topFilmsElement.innerHTML = `
-    <h2>Лучшие фильмы моих любимых режиссеров</h2>
+    <h2>Лучшие фильмы этих режиссеров</h2>
     <ul>
         ${topFilms.map(film => `<li>${film}</li>`).join('')}
     </ul>
